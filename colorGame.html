@@ -5,11 +5,28 @@
     <title>Color Guessing Game</title>
     <link rel="stylesheet" type="text/css" href="colorGame.css" />
   </head>
-  <body>
-    <div>
-      <h1>The Great</h1>
+  <body onload="startNewGame()">
+    <div class='title'>
+      <h2>The Great</h1>
       <h1 id="set-rgb-color">Waiting for new color....</h1>
-      <h1>Guessing Game</h1>
+      <h2>Guessing Game</h1>
+    </div>
+
+    <div class='game-info'>
+      <button type="button" id="new-color">NEW COLOR</button>
+      <button type="button" id="try-again"></button>
+      <button type="button" id="easy" class="level">EASY</button>
+      <button type="button" id="hard" >HARD</button>
+    </div>
+
+    <div id="square-container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
 
 

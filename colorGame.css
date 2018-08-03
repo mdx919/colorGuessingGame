@@ -1,7 +1,91 @@
 * {
-  border: 0;
+  margin: 0;
   padding: 0;
 }
-div {
-  background: rgb(135,206,250);
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  background-color: #232323;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.title {
+  background-color: steelblue;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.game-info {
+  background-color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#try-again {
+  margin-left: 10%;
+  color: red;
+}
+
+button {
+  border: none;
+  font-size: 18px;
+  color: steelblue;
+  padding: 5px 5px;
+  transition: .4s;
+}
+
+button:hover {
+  color: white;
+  background-color: steelblue;
+}
+
+.level {
+  margin-left: 10%;
+}
+
+#square-container {
+  margin: auto;
+  max-width: 600px;
+    margin-top: 10px;
+}
+
+.square {
+  width: 30%;
+  background-color: green;
+  margin: 1.66%;
+  border-radius: 15px;
+  float: left;
+  padding-bottom: 30%;
+  transition: background .6s;
+}
+
+@keyframes example {
+    0%   {background-color:green; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:yellow; left:0px; top:0px;}
+}
+
+.flashColor {
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+.changeDiffLvl {
+  background-color: steelblue;
+  color: white;
+}
+
+.secondBlocks {
+  padding-bottom: 0;
+  display: 'none';
 }
